@@ -88,7 +88,7 @@ function Project() {
           />
           <ProjectCard
             ProjectImg={nightCoderImg}
-            ProjectTitle="Night Coder"
+            ProjectTitle="Night Coderrr"
             ProjectDesc="I developed my first portfolio website using HTML and CSS after learning them for just three weeks this is Responsive with Clean and Simple Design"
             ProjectLink="https://nightcoderadarsh.netlify.app/"
             onShowPopup={handleShowPopup}
