@@ -1,0 +1,483 @@
+.landing-main{
+  padding: 80px 0 ;
+  background: var(--background-color-reverse);
+ --shadow-gray:  var(--shadow-gray:#3d3d3d);
+}
+
+
+.greet-text {
+  padding: 20px 0;
+}
+.quote-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.quote-icon {
+  padding-right: 10px;
+}
+.quote-h1 > h1 {
+  font-family: "Cinzel", serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  color: transparent; /* Make the inner text transparent */
+  -webkit-text-stroke: 1.5px var(--text-heading); /* Define the text outline */
+}
+.quote-emoji {
+  padding-left: 20px;
+}
+
+.greet-para {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  margin: 20px auto;
+}
+.greet-para > p {
+  line-height: 25px;
+}
+
+/* -------Cloud---- */
+.greet-cloud {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 50px auto;
+  position:relative;
+}
+
+.cloud {
+  position: absolute;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+
+.cloud img {
+  width: 100%;
+  height: auto; 
+  position: fixed;
+}
+
+.cloud p {
+  position: absolute; 
+  color: var(--cloud-text);
+  font-weight: 700;
+}
+.cloud1 {
+  width: 190px;
+  top: 120px;
+  left: 0;
+  animation: cloudmove1 180s linear infinite;
+  z-index: 1  ;
+}
+
+.cloud2 {
+  width: 160px;
+  top: -120px;
+  left: 15%;
+  animation: cloudmove2 190s linear infinite;
+}
+
+.cloud3 {
+  width: 165px;
+  top: 50px;
+  left: 25%;
+  animation: cloudmove3 80s linear infinite;
+  z-index: 1;
+}
+.cloud4 {
+  top: -50px;
+  width: 250px;
+  right: 40%;
+  animation-name: cloudmove4;
+  animation: cloudmove4 230s linear infinite;
+}
+
+.cloud5 {
+  top: -70px;
+  width: 90px;
+  right: 32%;
+  animation: cloudmove5 130s linear infinite;
+}
+
+.cloud6 {
+  top: 10px;
+  width: 250px;
+  right: 10%;
+  animation: cloudmove6 200s linear infinite;
+}
+
+.cloud7 {
+  width: 100px;
+  top: -40px;
+  right: 0;
+  animation: cloudmove7 126s linear infinite;
+  z-index: 1;
+}
+
+
+.cloud8 {
+  width: 120px;
+  top: 40px;
+  right: 0;
+  animation: cloudmove7 122s linear infinite;
+  z-index: 1;
+}
+
+/* -----Cloud---animation-------- */
+@keyframes cloudmove1 {
+  0% {
+    transform: translateX(0vw); /* Start slightly off-screen to the left */
+    filter: drop-shadow(2px 2px 2px  var(--shadow-gray));
+  }
+  50% {
+    transform: translateX(70vw); /* Move to the right */
+    filter: drop-shadow(8px 4px 4px  var(--shadow-gray));
+  }
+  100% {
+    transform: translateX(0vw); /* Return to the start */
+    filter: drop-shadow(0px 2px 2px  var(--shadow-gray));
+  }
+}
+
+@keyframes cloudmove2 {
+  0% {
+    transform: translateX(75vw); /* Start slightly off-screen to the right */
+    filter: drop-shadow(5px 2px 2px  var(--shadow-gray));
+  }
+  50% {
+    transform: translateX(-20vw); /* Move to the left */
+    filter: drop-shadow(-8px 4px 4px  var(--shadow-gray));
+  }
+  100% {
+    transform: translateX(75vw); /* Return to the start */
+    filter: drop-shadow(5px 2px 2px  var(--shadow-gray));
+  }
+}
+
+@keyframes cloudmove3 {
+  0% {
+    transform: translateX(-10vw); /* Start from the left */
+    filter: drop-shadow(-3px 2px 2px  var(--shadow-gray));
+  }
+  50% {
+    transform: translateX(60vw); /* Move to the right */
+    filter: drop-shadow(6px 3px 3px var(--shadow-gray));
+  }
+  100% {
+    transform: translateX(-10vw); /* Return to the start */
+    filter: drop-shadow(-3px 2px 2px  var(--shadow-gray));
+  }
+}
+
+@keyframes cloudmove4 {
+  0% {
+    transform: translateX(40vw); /* Start from the right */
+    filter: drop-shadow(4px 3px 2px  var(--shadow-gray));
+  }
+  50% {
+    transform: translateX(-30vw); /* Move to the left */
+    filter: drop-shadow(-7px 5px 4px var(--shadow-gray) );
+  }
+  100% {
+    transform: translateX(40vw); /* Return to the start */
+    filter: drop-shadow(4px 3px 2px  var(--shadow-gray));
+  }
+}
+
+@keyframes cloudmove5 {
+  0% {
+    transform: translateX(-30vw); /* Start slightly inside */
+    filter: drop-shadow(-4px 3px 2px  var(--shadow-gray));
+  }
+  50% {
+    transform: translateX(20vw); /* Move further right */
+    filter: drop-shadow(6px 4px 3px  var(--shadow-gray));
+  }
+  100% {
+    transform: translateX(-30vw); /* Return to the start */
+    filter: drop-shadow(-4px 3px 2px  var(--shadow-gray));
+  }
+}
+
+@keyframes cloudmove6 {
+  0% {
+    transform: translateX(-45vw); /* Start from the left */
+    filter: drop-shadow(-7px 5px 4px  var(--shadow-gray));
+  }
+  50% {
+    transform: translateX(10vw); /* Move to the right */
+    filter: drop-shadow(10px 7px 6px  var(--shadow-gray));
+  }
+  100% {
+    transform: translateX(-45vw); /* Return to the start */
+    filter: drop-shadow(-7px 5px 4px  var(--shadow-gray));
+  }
+}
+
+@keyframes cloudmove7 {
+  0% { 
+    transform: translateX(0vw); 
+    filter: drop-shadow(6px 3px 3px  var(--shadow-gray));
+  }
+  50% { 
+    transform: translateX(-80vw); 
+    filter: drop-shadow(-8px 4px 4px  var(--shadow-gray));
+  }
+  100% { 
+    transform: translateX(0vw); 
+    filter: drop-shadow(6px 3px 3px  var(--shadow-gray));
+  }
+}
+/* -------greet--piine--- */
+
+.greet-pine {
+  margin-top: 80px;
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Spread items evenly */
+  position: relative; /* Ensure `.pine-text` can be centered absolutely */
+}
+
+.pine-tree,
+.pine-contact {
+  text-align: center; /* Center the content of these containers */
+}
+.pine-tree {
+  width: 33%;
+}
+.pinetree {
+  filter: drop-shadow(-10px 10px 8px var(--shadow-gray));
+}
+.pine-text {
+  position: absolute; /* Position it independently */
+  left: 50%; /* Move to the center horizontally */
+  transform: translateX(-50%); /* Adjust to ensure proper centering */
+  text-align: center; /* Center the text inside */
+  width: 40%; /* Adjust as per the text content's width */
+  padding: 40px;
+}
+
+.pine-tree img {
+  max-width: 100%; /* Ensure responsive images */
+  height: auto;
+}
+.pine-text h4 {
+  font-size: 24px;
+  color: var(--text-color);
+}
+.pine-contact {
+  width: 20%;
+  position: relative; /* Enables positioning of child elements */
+  top: 40px;
+  z-index: 1;
+}
+
+.contact-outer {
+  cursor: pointer;
+  background: var(--button-background);
+  padding: 10px 20px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px; 
+  margin: 0 auto;
+  position: relative;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  text-align: center;
+}
+
+.contact-link a {
+  color: var(--button-text);
+  font-size: 18px;
+  font-weight: 500;
+}
+.contact-outer:hover{
+ text-decoration: underline 1.5px ;
+}
+
+.contact-link {
+  transform: rotate(-20deg);
+}
+
+.contact-leaf-left,
+.contact-leaf-right {
+  position: absolute;
+  width: 110px;
+  z-index: -1;
+  transform: scale(0);
+  transition: transform 0.3s ease;
+}
+.contact-leaf-left {
+  top: -40px;
+  left: -40px;
+  transition: 0.5s;
+}
+
+.contact-leaf-right {
+  top: 10px;
+  left: 40px;
+}
+.contactleafright {
+  transform: rotate(150deg);
+}
+
+.contact-outer:hover .contact-leaf-left,
+.contact-outer:hover .contact-leaf-right {
+  transform: scale(1);
+  filter: drop-shadow(2px 5px 2px var(--shadow-gray));
+  animation-timing-function: 0.1s;
+  overflow: hidden;
+}
+.contact-outer:hover .contact-leaf-left {
+  animation: rotate1 0.5s ease-in-out forwards;
+}
+.contact-outer:hover .contact-leaf-right {
+  animation: rotate2 0.5s ease-in-out forwards;
+}
+@keyframes rotate1 {
+  from {
+    opacity: 0;
+    top: 0px;
+    left: -10px;
+    transform: rotate(50deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotate(-20deg);
+    top: -20px;
+    width: 70px;
+  }
+}
+@keyframes rotate2 {
+  from {
+    opacity: 0;
+    transform: rotate(-50deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(20deg);
+    top: 30%;
+    left: 60%;
+    width: 80px;
+  }
+}
+/* For smaller screens */
+
+@media (max-width: 575px) {
+  .quote-h1 h1 {
+    font-size: 25px;
+  }
+  .quote-icon svg,
+  .quote-emoji svg {
+    width: 25px;
+  }
+  .greet-cloud{
+    width: 80%;
+    /* margin: 0 auto; */
+  }
+
+  .cloud1 {
+    width: 100px;
+    top: 120px;
+    left: 5%;
+  }
+  .cloud2 {
+    width: 120px;
+    top: -70px;
+    left: 10%;
+  }
+  .cloud3 {
+    width: 100px;
+    top: 80px;
+    left: 20%;
+  }
+  .cloud4 {
+    width: 200px;
+    top: 20px;
+    right: 20%;
+  }
+  .cloud5 {
+    width: 90px;
+    top: -30px;
+    right: 15%;
+  }
+  .cloud6 {
+    width: 150px;
+    top: -10px;
+    right: 10%;
+  }
+  .cloud7 {
+    width: 90px;
+    top: -20px;
+    right: 0;
+  }
+
+  .greet-pine {
+    padding: 40px 0;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+  }
+  .greet-para {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .greet-para > p {
+    font-size: 14px;
+  }
+
+  .pine-tree {
+    width: 70%;
+  }
+  .pine-text {
+    position: relative;
+    width: 80%; /* Adjust width for responsiveness */
+    transform: translateX(-60%);
+    text-align: center;
+  }
+  .pine-text div {
+    font-size: 24px;
+    line-height: 38px;
+  }
+  .pine-contact {
+    top: 20px;
+  }
+  .contact-outer {
+    width: 80px;
+    height: 80px;
+  }
+  .contact-link a {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  
+  .greet-pine {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .pine-text {
+    position: static;
+    transform: none;
+    width: auto;
+    margin: 15px 0;
+  }
+
+  .pine-tree,
+  .pine-contact {
+    width: 40%;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+}

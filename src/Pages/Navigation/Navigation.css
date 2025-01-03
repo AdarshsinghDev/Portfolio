@@ -1,0 +1,112 @@
+.navigation-main {
+  padding: 40px 10px;
+  background: var(--background-color-reverse);
+  /* --shadow-gray: var(--shadow-gray); */
+}
+.navigation-cloud {
+  width: 100%;
+  /* z-index: 1;x */
+}
+.cloud-inner {
+  position: relative;
+  width: 20%;
+  z-index: 2;
+}
+.navigationcloud {
+  position: absolute;
+}
+.cloud-inner {
+  animation: cloudmove linear infinite;
+}
+
+.cloud-inner.fast {
+  animation-duration: 65s;
+  top: 70px;
+}
+.cloud-inner.reverse {
+  animation-name: cloudmovereverse;
+  animation-duration: 75s;
+  opacity: 0.9;
+}
+
+@keyframes cloudmove {
+  from {
+    transform: translateX(-20vw);
+    filter: drop-shadow(-30px 10px 5px  var(--shadow-gray)); 
+  }
+  to {
+    transform: translateX(100vw);
+    filter: drop-shadow(30px 10px 2px  var(--shadow-gray));
+  }
+}
+
+@keyframes cloudmovereverse {
+  from {
+    transform: translateX(100vw);
+    filter: drop-shadow(30px 10px 2px  var(--shadow-gray));
+  }
+  to {
+    transform: translateX(-20vw);
+    filter: drop-shadow(-30px 10px 5px  var(--shadow-gray));
+  }
+}
+
+.navigationul {
+  text-align: center;
+}
+.navigationul li {
+  margin: 40px 5px;
+  font-size: 80px;
+  font-weight: 800;
+}
+.navigationul li a {
+  color: var(--text-heading);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.navigationdot {
+  position: relative;
+}
+
+.navigationdot::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background: var(--text-heading);
+  position: absolute;
+}
+
+.navigationdot::after {
+  top: 25px;
+  left: 0px;
+  right: 0px;
+  transform: translate(15%, 0%);
+}
+
+.navigationul li a:hover {
+  text-shadow: 0px 4px 5px var(--shadow-gray);
+  transition: all 0.3s ease;
+}
+.navigationul li a.active {
+  border-bottom: 3px solid var(--text-heading);
+}
+
+@media (max-width: 575px) {
+  .navigation-cloud {
+    flex-direction: column;
+  }
+  .cloud-inner {
+    width: 30%;
+    z-index: 1;
+  }
+  .navigationul li {
+    font-size: 45px;
+  }
+  .navigationdot::after {
+    width: 30px;
+    height: 30px;
+    transform: translate(13%, -40%);
+  }
+}

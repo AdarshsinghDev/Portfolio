@@ -1,0 +1,356 @@
+.home-main {
+  padding: 20px 0 80px;
+  background: var(--background-color);
+}
+
+.dark-btn {
+  margin: 10px;
+  width: 80px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: var(--button-background);
+  display: flex;
+  align-items: center;
+  box-shadow: 5px 5px 0px var(--button-shadow);
+  border: 1px solid var(--button-border);
+  position: relative;
+}
+
+.dark-btn_circle {
+  position: absolute;
+  top: 3px;
+  margin: 0 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  background: var(--background-color);
+  cursor: pointer;
+  box-shadow: 2.5px 2.5px 0px var(--shadow-brown);
+}
+.dark-btn_circle:hover {
+  transform: scale(1);
+  box-shadow: 4px 4px 5px var(--shadow-brown);
+  transition: 0.25s;
+}
+
+.dark-btn_circle.right {
+  right: 2px;
+}
+.music-btn{
+  background: var(--button-background);
+  padding: 7px 10px;
+  border-radius: 50%;
+  position: fixed;
+  top: 80px;
+  z-index: 1;
+  opacity: 0.3;
+  width: fit-content;
+  cursor: pointer;
+}
+.music-btn:hover{
+  opacity: 1;
+  scale: 1.1;
+}
+
+
+/*/////------- MENU--SECTION */
+
+.main-menu {
+  position: relative;
+  z-index: 2;
+}
+.menu-leaf {
+  z-index: -1;
+}
+
+.menu-ul {
+  visibility: hidden; /* Default hidden */
+  opacity: 0; /* Invisible by default */
+  transition: opacity 0.5s linear;
+}
+
+.menu-ul.visible {
+  visibility: visible; /* Show when class is active */
+  opacity: 1; /* Fully visible */
+}
+.menu-ul.hidden {
+  visibility: hidden; /* Ensure it's hidden */
+  opacity: 0; /* Fully invisible */
+}
+.menuul {
+  position: absolute;
+  right: 60px;
+}
+.menuul li {
+  padding: 5px 2px;
+  margin: 5px 10px;
+  text-align: center;
+}
+.menu-link {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 3px;
+}
+.menu-link a {
+  color: #fff;
+}
+
+.toggle-btn.visible {
+  visibility: visible;
+}
+.menuicon {
+  background: var(--button-background);
+  width: 50px;
+  height: auto;
+  padding: 5px;
+  border-radius: 50px;
+}
+
+.menu-icon {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px 0 10px;
+}
+
+.menu-leaf {
+  position: absolute;
+  top: 327px;
+  right: 104px;
+  width: 15px;
+  /* animation-name: none; */
+  animation: 0.7s ease-in-out forwards;
+  transform: rotate(320deg);
+}
+
+@keyframes leafflow {
+  from {
+    transform: rotate(10deg);
+  }
+
+  to {
+    transform: rotate(270deg);
+    top: -100px;
+    right: -100px;
+    width: 350px;
+  }
+}
+
+/* -------MY--TEXT */
+.my-text {
+  text-align: center;
+}
+.myname {
+  font-family: "Satisfy", cursive;
+  font-size: 60px;
+  font-weight: 400;
+}
+.mywork {
+  font-size: 30px;
+  color: var(--text-color);
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+}
+.home-img {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.hillimg {
+  height: 100%;
+  margin: 30px 0;
+}
+.branch1 {
+  transform: rotate(150deg);
+  width: 60%;
+}
+.hill-img {
+  width: 41%;
+}
+.branch-img2 {
+  text-align: end;
+  transform: translateY(100px) translateX(25px);
+}
+.branch2 {
+  width: 60%;
+  text-align: end;
+}
+
+/* ------------RESPONSIVE */
+
+@media (max-width: 575px) {
+  .dark-btn {
+    width: 50px;
+    height: 25px;
+  }
+  .dark-btn_circle {
+    width: 20px;
+    height: 20px;
+    top: 0.5px;
+    margin: 0px 2px;
+  }
+  .music-btn{
+    width: 40px;
+  }
+  .menu-leaf {
+    top: 295px;
+    right: 37px;
+    width: 10px;
+  }
+  .menuicon {
+    width: 40px;
+    position: relative;
+    top: -10px;
+    font-weight: bold;
+  }
+  .menu-link {
+    padding: 2px;
+  }
+
+  .menu-icon {
+    padding: 10px 20px 40px;
+  }
+  .my-text {
+    padding-bottom: 40px;
+  }
+  .myname {
+    font-size: 30px;
+  }
+  .mywork {
+    font-size: 18px;
+  }
+  .hill-img {
+    width: 80rem;
+    display: flex;
+    justify-content: center;
+  }
+  .hillimg {
+    width: 300px;
+    /* margin: 0px 0; */
+  }
+  .branch-img1,
+  .branch-img2 {
+    position: relative;
+  }
+  .branch1,
+  .branch2 {
+    width: 130px;
+    position: absolute;
+  }
+  .branch2 {
+    left: -100px;
+  }
+  .branch-img2 {
+    transform: translateX(5px) translateY(80px);
+  }
+
+  @keyframes leafflow {
+    from {
+      transform: rotate(10deg);
+    }
+
+    to {
+      transform: rotate(270deg);
+      top: -10px;
+      right: -70px;
+      width: 200px;
+    }
+  }
+  .menuul {
+    right: 10px;
+    top: 25px;
+  }
+  .menu-link {
+    font-size: 13px;
+  }
+  .menuul li {
+    margin: 3px auto;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .dark-btn {
+    width: 55px;
+    height: 30px;
+  }
+  .dark-btn_circle {
+    width: 25px;
+    height: 25px;
+    top: 0px;
+    margin: 0px 2px;
+  }
+  .menu-leaf {
+    top: 253px;
+    right: 32px;
+    width: 9px;
+  }
+  .menuicon {
+    width: 30px;
+  }
+  .myname {
+    font-size: 35px;
+  }
+  .mywork {
+    font-size: 25px;
+  }
+  .hill-img {
+    width: 100%;
+  }
+  @keyframes leafflow {
+    from {
+      transform: rotate(10deg);
+    }
+
+    to {
+      transform: rotate(270deg);
+      top: 0px;
+      right: -60px;
+      width: 240px;
+    }
+  }
+  .menu-ul {
+    top: 40px;
+    right: -30px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .menuicon {
+    width: 30px;
+  }
+  .menu-leaf {
+    top: 355px;
+    width: 10px;
+    right: 47px;
+  }
+  .myname {
+    font-size: 40px;
+  }
+  .mywork {
+    font-size: 30px;
+  }
+  .hill-img {
+    width: 100%;
+  }
+  .branch-img2 {
+    transform: translateY(180px) translateX(20px);
+  }
+  @keyframes leafflow {
+    from {
+      transform: rotate(10deg);
+    }
+
+    to {
+      transform: rotate(270deg);
+      top: 0px;
+      right: -60px;
+      width: 240px;
+    }
+  }
+  .menu-ul {
+    top: 40px;
+    right: -30px;
+  }
+}

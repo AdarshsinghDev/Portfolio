@@ -1,0 +1,94 @@
+/* for i m Adarsh Singh */
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+/* for paragraph */
+@import url("https://fonts.googleapis.com/css2?family=Kings&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/* for highlighted text  */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat;
+  box-sizing: border-box;
+  transition: 0.2s ease;
+}
+body {
+  color: var(--text-dark);
+}
+.main {
+  overflow: hidden;
+}
+.light {
+  --background-color: linear-gradient(180deg, #dfefff, #a0d4f7);
+  --background-color-reverse: linear-gradient(0deg, #dfefff, #a0d4f7);
+  --text-color: #3d3d3d;
+  --text-heading: #3b803a;
+  --contact-dark: linear-gradient(150deg, #fff8be, #a0d4f7);
+
+  --button-background: #69aa61;
+  --button-text:#000000;
+  --button-hover-background: #5f9757;
+  --button-primary-hover: #00695c;
+  --button-shadow: #905b43c4;
+  --button-border: #905b43c4;
+  --shadow-green: #3b803a;
+  --shadow-brown: #905b43c4;
+  --shadow-gray: #3d3d3d;
+  --cloud-text: #3d3d3d;
+}
+
+.dark {
+  --background-color: linear-gradient(180deg, #1f4037, #121212);
+  --background-color-reverse: linear-gradient(0deg, #1f4037, #121212);
+  --text-color: #fff;
+  --text-heading: #76c893;
+  --contact-dark: linear-gradient(150deg, #030c16, #829bb4);
+  --cloud-text: #3d3d3d;
+
+  --button-background: #28a745;
+  --button-text:#ffff;
+  --button-shadow: #0f6924;
+  --button-border: #7ab889;
+  --shadow-gray: #b3a9a9;
+  --shadow-green: #fff;
+  --button-hover-background: #1e7e34;
+}
+a {
+  text-decoration: none;
+  color: initial;
+}
+h1,
+h2,
+h4 {
+  font-size: 32px;
+  font-family: "Cinzel", serif;
+  color: var(--text-heading);
+}
+p,
+div {
+  font-family: Montserrat;
+  color: var(--text-color);
+}
+li {
+  list-style: none;
+}
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+button {
+  color: var(--button-text);
+  border-radius: 10px;
+  box-shadow: 3px 3px 0px var(--button-shadow);
+  border: 1px solid var(--button-border);
+  background-color: var(--button-background);
+}
+button:hover {
+  background: var(--button-hover-background);
+  transform: scale(1.1);
+  border: 1px solid var(--button-border);
+  box-shadow: 5px 5px 8px var(--button-shadow);
+  transition: 0.25s;
+}

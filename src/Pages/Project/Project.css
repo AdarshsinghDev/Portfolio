@@ -1,0 +1,248 @@
+.project-main {
+  padding: 80px 0 130px;
+  text-align: center;
+  background: var(--background-color);
+}
+
+.project-title {
+  line-height: 4;
+}
+
+
+
+.project-card_main {
+  flex: 1 1 calc(20% - 20px); 
+  max-width: 260px; 
+}
+
+.slick-slider {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.slick-slide {
+  display: flex;
+  justify-content: center;
+}
+.slick-initialized .slick-slide {
+  display: flex !important;
+  align-items: center;
+}
+.slick-prev:before,
+.slick-next:before {
+  font-size: 35px !important;
+}
+.slick-prev,
+.slick-next {
+  box-shadow: none;
+}
+.slick-next,
+.slick-prev {
+  top: 40% !important;
+}
+
+.slick-prev {
+  left: -80px !important;
+}
+.slick-next {
+  right: -50px !important;
+}
+.slick-prev:before {
+  content: url(../../assets/arrow-left.png) !important;
+
+}
+
+.slick-next:before {
+  content: url(../../assets/arrow-right.png) !important;
+}
+
+.slick-arrow:hover{
+  width: 0;
+  height: 0;
+}
+.slick-arrow {
+  width: 0;
+  height: 0;
+}
+.desc-main {
+  padding: 10px;
+  background: var(--btn-bg-color);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #00000067;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.desc-inner {
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  color: black;
+  width: 400px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+  overflow-y: auto;
+  transform: scale(1);
+  animation: popupGrow 0.5s ease-out forwards;
+}
+
+.desc-inner p {
+  line-height: 1.7;
+  background: var(--button-background);
+  padding: 10px;
+  color: #000000;
+  overflow-y: auto;
+}
+.desc-inner button {
+  width: fit-content;
+  margin: 10px auto;
+  padding: 10px;
+}
+.desc-inner h1 {
+  color: var(--text-color);
+}
+
+.desc-inner::after {
+  content: "";
+  width: 50%;
+  height: 100%;
+  background: var(--button-background);
+  position: absolute;
+  top: 0;
+  left: 0%;
+  z-index: -1;
+}
+.desc-inner::before {
+  content: "";
+  width: 50%;
+  height: 100%;
+  background: var(--background-color);
+  opacity: 0.8;
+  position: absolute;
+  bottom: 0;
+  right: 0%;
+  z-index: -1;
+}
+
+.popup-window-note {
+  color: var(--button-text);
+  font-size: 13px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.popup-window-note i {
+  text-align: left;
+}
+
+@keyframes popupGrow {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1.5;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.desc-inner.show {
+  animation: popupGrow 0.5s ease-out forwards;
+}
+
+@media (max-width: 768px) and (max-width: 991px) {
+  .project-main {
+    flex-wrap: wrap; /* Cards stack on smaller screens */
+    gap: 20px; /* Reduce space between items */
+  }
+
+  .arrow-img img {
+    width: 25px; 
+  }
+
+  .project-card_main {
+    flex: 1 1 calc(50% - 20px); /* 2 cards per row on medium screens */
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .slick-prev {
+    left: -65px !important;
+  }
+  .slick-next {
+    right: -30px !important;
+  }
+
+  .desc-inner {
+    gap: 10px;
+    width: 300px;
+    height: 400px;
+    padding: 15px;
+  }
+  .desc-inner h1 {
+    font-size: 25px;
+  }
+  .desc-inner p {
+    font-size: 14px;
+  }
+  .desc-inner button {
+    width: fit-content;
+    margin: 5px auto;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 575px) {
+  .project-main {
+    padding: 15px;
+  }
+
+  .project-card_main {
+    width: 100%; 
+  }
+  .slick-slider {
+    width: 52%;
+  }
+  .slick-next {
+    right: -20px !important;
+  }
+  .desc-inner {
+    gap: 10px;
+    width: 300px;
+    height: 400px;
+    padding: 15px;
+  }
+  .desc-inner h1 {
+    font-size: 22px;
+  }
+  .desc-inner p {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .desc-inner button {
+    width: fit-content;
+    margin: 5px auto 0;
+    padding: 6px;
+  }
+  .popup-window-note {
+    padding-top: 10px;
+    font-size: 10px;
+    line-height: 1.5;
+  }
+}
