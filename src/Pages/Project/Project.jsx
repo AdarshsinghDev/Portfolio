@@ -6,6 +6,7 @@ import todoImg from "../../assets/todolistimg.png";
 import timerImg from "../../assets/timerimg.jpg";
 import nightCoderImg from "../../assets/nightCoder.png";
 import skatingSchoolImg from "../../assets/skatingSchool.png";
+import netcraftImg from "../../assets/netcraft.png";
 import Slider from "react-slick";
 import clickSound from "../../assets/click.mp3";
 
@@ -94,6 +95,16 @@ function Project() {
             onShowPopup={handleShowPopup}
             isHidden={isHidden}
           />
+
+          <ProjectCard
+            ProjectImg={netcraftImg}
+            ProjectTitle="NetCraft"
+            ProjectDesc="NetCraft is a  modern, and fully responsive website template built using HTML, CSS, and JavaScript. Designed to showcase the versatility and potential of web development, this template offers a clean, minimalistic layout that adapts seamlessly across all device sizes. With its focus on user experience and intuitive design, NetCraft includes a fully functional navigation bar, dynamic content sections, and smooth animations that engage users This is Proffesional and Commercial level website."
+            ProjectLink="https://netcraftweb.vercel.app/"
+            onShowPopup={handleShowPopup}
+            isHidden={isHidden}
+          />
+          
           <ProjectCard
             ProjectImg={timerImg}
             ProjectTitle="Timer"
