@@ -5,7 +5,7 @@ import pineTree from "../../assets/pine_tree.png";
 import leaf from "../../assets/leaf.svg";
 import cloud from "../../assets/cloud.png";
 import cloudL from "../../assets/cloud-l.png";
-import certificatePdf from "../../assets/Adarsh_Certificate.pdf";
+import certificatePdf from "../../../public/Adarsh_Certificate.pdf";
 function LandingPage() {
   const [text, setText] = useState("");
 
