@@ -106,17 +106,17 @@ function Project() {
           />
           
           <ProjectCard
-            ProjectImg={timerImg}
-            ProjectTitle="Timer"
-            ProjectDesc="The Timer List project is a dynamic and interactive web application built with ReactJS. It allows users to create, manage, and monitor multiple timers efficiently."
-            ProjectLink=""
+            ProjectImg={calculatorImg}
+            ProjectTitle="Calculator"
+            ProjectDesc="A powerful and visually appealing calculator built using ReactJS, JavaScript (ES6+), CSS3, Git/GitHub for version control, showcasing advanced UI/UX design and functional programming expertise A modern, dark-themed calculator with a clean and minimalistic design Fully responsive design, ensuring usability on desktops, tablets, and smartphones."
+            ProjectLink="https://calculatoradarsh.vercel.app/"
             onShowPopup={handleShowPopup}
             isHidden={isHidden}
           />
 
-          <ProjectCard
-            ProjectImg={calculatorImg}
-            ProjectTitle="Calculator"
+             <ProjectCard
+            ProjectImg={timerImg}
+            ProjectTitle="Timer"
             ProjectDesc="The Timer List project is a dynamic and interactive web application built with ReactJS. It allows users to create, manage, and monitor multiple timers efficiently."
             ProjectLink=""
             onShowPopup={handleShowPopup}
