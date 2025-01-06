@@ -5,6 +5,7 @@ import pineTree from "../../assets/pine_tree.png";
 import leaf from "../../assets/leaf.svg";
 import cloud from "../../assets/cloud.png";
 import cloudL from "../../assets/cloud-l.png";
+import certificatePdf from "../../assets/Adarsh_Certificate.pdf";
 function LandingPage() {
   const [text, setText] = useState("");
 
@@ -242,7 +243,7 @@ function LandingPage() {
           <div className="contact-outer">
             <div className="contact-link">
               <a
-                href="../../assets/Adarsh_Certificate.pdf"
+                href={certificatePdf}
                 className="certificate-btn"
                 download="Adarsh_Certificate.pdf"
               >
