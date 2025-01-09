@@ -7,6 +7,7 @@ import timerImg from "../../assets/timerimg.jpg";
 import nightCoderImg from "../../assets/nightCoder.png";
 import skatingSchoolImg from "../../assets/skatingSchool.png";
 import netcraftImg from "../../assets/netcraft.png";
+import tindogImg from "../../assets/tinDog.png";
 import Slider from "react-slick";
 import clickSound from "../../assets/click.mp3";
 
@@ -115,10 +116,10 @@ function Project() {
           />
 
              <ProjectCard
-            ProjectImg={timerImg}
-            ProjectTitle="Timer"
-            ProjectDesc="The Timer List project is a dynamic and interactive web application built with ReactJS. It allows users to create, manage, and monitor multiple timers efficiently."
-            ProjectLink=""
+            ProjectImg={tindogImg}
+            ProjectTitle="TinDog"
+            ProjectDesc="Tindog is a web app designed for dog owners to connect, create profiles for their dogs, and interact with other pet lovers. Users can browse profiles, find playmates, and join a community of like-minded dog enthusiasts."
+            ProjectLink="https://tindog-adarsh.vercel.app/"
             onShowPopup={handleShowPopup}
             isHidden={isHidden}
           />
