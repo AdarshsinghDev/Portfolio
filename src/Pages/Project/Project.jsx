@@ -2,12 +2,11 @@ import React, { useEffect, useState } from "react";
 import "./Project.css";
 import ProjectCard from "./Components/ProjectCard";
 import calculatorImg from "../../assets/calculatorimg.jpg";
-import todoImg from "../../assets/todolistimg.png";
-import timerImg from "../../assets/timerimg.jpg";
 import nightCoderImg from "../../assets/nightCoder.png";
 import skatingSchoolImg from "../../assets/skatingSchool.png";
 import netcraftImg from "../../assets/netcraft.png";
 import tindogImg from "../../assets/tinDog.png";
+import quoteImg from "../../assets/quote.png";
 import Slider from "react-slick";
 import clickSound from "../../assets/click.mp3";
 
@@ -125,10 +124,10 @@ function Project() {
           />
 
           <ProjectCard
-            ProjectImg={todoImg}
-            ProjectTitle="ToDo"
-            ProjectDesc="The Timer List project is a dynamic and interactive web application built with ReactJS. It allows users to create, manage, and monitor multiple timers efficiently."
-            ProjectLink=""
+            ProjectImg={quoteImg}
+            ProjectTitle="Random Quote Generator"
+            ProjectDesc="An interactive web application built with HTML, CSS, and JavaScript, the Quote Generator allows users to discover and explore inspiring quotes. The application is fully responsive, ensuring a seamless experience across various devices. This project highlights proficiency in front-end development, with an emphasis on user-centric design and dynamic JavaScript functionality."
+            ProjectLink="https://quote-generator-adarsh.vercel.app/"
             onShowPopup={handleShowPopup}
             isHidden={isHidden}
           />
