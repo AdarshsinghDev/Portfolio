@@ -7,6 +7,8 @@ import skatingSchoolImg from "../../assets/skatingSchool.png";
 import netcraftImg from "../../assets/netcraft.png";
 import tindogImg from "../../assets/tinDog.png";
 import quoteImg from "../../assets/quote.png";
+import passgenImg from "../../assets/passgen.png";
+
 import Slider from "react-slick";
 import clickSound from "../../assets/click.mp3";
 
@@ -87,6 +89,16 @@ function Project() {
             onShowPopup={handleShowPopup}
             isHidden={isHidden}
           />
+
+          <ProjectCard
+            ProjectImg={passgenImg}
+            ProjectTitle="Random Password Generator"
+            ProjectDesc="This password generator offers customizable options for password creation. Users can control the password length and select which types of characters (uppercase, lowercase, numbers, symbols) to include, giving them full control over their password's strength and complexity."
+            ProjectLink="https://password-generator-adarsh.vercel.app/"
+            onShowPopup={handleShowPopup}
+            isHidden={isHidden}
+          />
+          
           <ProjectCard
             ProjectImg={nightCoderImg}
             ProjectTitle="Night Coder"
