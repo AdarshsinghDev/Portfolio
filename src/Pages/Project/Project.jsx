@@ -7,6 +7,7 @@ import skatingSchoolImg from "../../assets/skatingSchool.png";
 import netcraftImg from "../../assets/netcraft.png";
 import tindogImg from "../../assets/tinDog.png";
 import quoteImg from "../../assets/quote.png";
+import weatherImg from "../../assets/weather.png";
 import passgenImg from "../../assets/passgen.png";
 
 import Slider from "react-slick";
@@ -81,11 +82,12 @@ function Project() {
           <h1 className="project-title">Projects</h1>
         </u>
         <Slider {...settings}>
-          <ProjectCard
-            ProjectImg={skatingSchoolImg}
-            ProjectTitle="Skating School"
-            ProjectDesc="This project is a responsive website for a skating school, designed and developed using HTML and CSS. It serves as an informational and promotional platform to showcase the school's offerings, courses, and expertise. This project highlights My ability to create clean, visually appealing, and functional designs"
-            ProjectLink="https://skatingschool.netlify.app/"
+
+           <ProjectCard
+            ProjectImg={calculatorImg}
+            ProjectTitle="Calculator"
+            ProjectDesc="A powerful and visually appealing calculator built using ReactJS, JavaScript (ES6+), CSS3, Git/GitHub for version control, showcasing advanced UI/UX design and functional programming expertise A modern, dark-themed calculator with a clean and minimalistic design Fully responsive design, ensuring usability on desktops, tablets, and smartphones."
+            ProjectLink="https://calculatoradarsh.vercel.app/"
             onShowPopup={handleShowPopup}
             isHidden={isHidden}
           />
@@ -95,6 +97,29 @@ function Project() {
             ProjectTitle="Random Password Generator"
             ProjectDesc="This password generator offers customizable options for password creation. Users can control the password length and select which types of characters (uppercase, lowercase, numbers, symbols) to include, giving them full control over their password's strength and complexity."
             ProjectLink="https://password-generator-adarsh.vercel.app/"
+            onShowPopup={handleShowPopup}
+            isHidden={isHidden}
+          />
+
+          <ProjectCard
+            ProjectImg={weatherImg}
+            ProjectTitle="Weather"
+            ProjectDesc="A responsive weather application built using HTML, CSS, and JavaScript. The app fetches real-time weather data, allowing users to check current weather conditions for any location worldwide. It features:
+
+Interactive Design: User-friendly interface with dynamic background updates based on weather conditions.
+API Integration: Uses reliable weather APIs to provide accurate and up-to-date information.
+Responsive Layout: Optimized for various screen sizes, ensuring seamless functionality on desktop and mobile devices.
+This project demonstrates my skills in front-end development, API handling, and responsive design principles."
+            ProjectLink="https://weather-app-adarsh.vercel.app/"
+            onShowPopup={handleShowPopup}
+            isHidden={isHidden}
+          />
+          
+          <ProjectCard
+            ProjectImg={skatingSchoolImg}
+            ProjectTitle="Skating School"
+            ProjectDesc="This project is a responsive website for a skating school, designed and developed using HTML and CSS. It serves as an informational and promotional platform to showcase the school's offerings, courses, and expertise. This project highlights My ability to create clean, visually appealing, and functional designs"
+            ProjectLink="https://skatingschool.netlify.app/"
             onShowPopup={handleShowPopup}
             isHidden={isHidden}
           />
@@ -117,14 +142,6 @@ function Project() {
             isHidden={isHidden}
           />
           
-          <ProjectCard
-            ProjectImg={calculatorImg}
-            ProjectTitle="Calculator"
-            ProjectDesc="A powerful and visually appealing calculator built using ReactJS, JavaScript (ES6+), CSS3, Git/GitHub for version control, showcasing advanced UI/UX design and functional programming expertise A modern, dark-themed calculator with a clean and minimalistic design Fully responsive design, ensuring usability on desktops, tablets, and smartphones."
-            ProjectLink="https://calculatoradarsh.vercel.app/"
-            onShowPopup={handleShowPopup}
-            isHidden={isHidden}
-          />
 
              <ProjectCard
             ProjectImg={tindogImg}
