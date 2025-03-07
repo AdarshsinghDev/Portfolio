@@ -96,14 +96,6 @@ function Project() {
           <ProjectCard
             ProjectImg={globalImg}
             ProjectTitle="GlobalBites"
-            ProjectDesc="This password generator offers customizable options for password creation. Users can control the password length and select which types of characters (uppercase, lowercase, numbers, symbols) to include, giving them full control over their password's strength and complexity."
-            ProjectLink="https://globalbites.vercel.app/"
-            onShowPopup={handleShowPopup}
-            isHidden={isHidden}
-          />
-          <ProjectCard
-            ProjectImg={passgenImg}
-            ProjectTitle="Random Password Generator"
             ProjectDesc="GlobalBites is a full-stack recipe recommendation website that allows users to search for recipes based on available ingredients. The platform is powered by React.js (frontend) and Node.js with Express.js (backend). It integrates the Spoonacular API to fetch recipe data, prioritizing Indian cuisine before displaying other international dishes. The project also features Google Authentication, user-friendly filtering, and a secure, scalable backend deployed on Render.
 
 
@@ -111,7 +103,7 @@ function Project() {
 
 🔹 Technology Stack
 
-Frontend: React.js,CSS, Vite
+Frontend: React.js, Tailwind CSS, Vite
 
 Backend: Node.js, Express.js
 
@@ -120,6 +112,14 @@ API Integration: Spoonacular API for recipe data
 Authentication: Google OAuth
 
 Hosting: Vercel (Frontend) & Render (Backend)"
+            ProjectLink="https://globalbites.vercel.app/"
+            onShowPopup={handleShowPopup}
+            isHidden={isHidden}
+          />
+          <ProjectCard
+            ProjectImg={passgenImg}
+            ProjectTitle="Random Password Generator"
+            ProjectDesc="This password generator offers customizable options for password creation. Users can control the password length and select which types of characters (uppercase, lowercase, numbers, symbols) to include, giving them full control over their password's strength and complexity."
             ProjectLink="https://password-generator-adarsh.vercel.app/"
             onShowPopup={handleShowPopup}
             isHidden={isHidden}
