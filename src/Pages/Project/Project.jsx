@@ -9,6 +9,7 @@ import tindogImg from "../../assets/tinDog.png";
 import quoteImg from "../../assets/quote.png";
 import weatherImg from "../../assets/weather.png";
 import passgenImg from "../../assets/passgen.png";
+import globalImg from "../../assets/globalbites.png";
 
 import Slider from "react-slick";
 import clickSound from "../../assets/click.mp3";
@@ -92,6 +93,14 @@ function Project() {
             isHidden={isHidden}
           />
 
+          <ProjectCard
+            ProjectImg={globalImg}
+            ProjectTitle="GlobalBites"
+            ProjectDesc="This password generator offers customizable options for password creation. Users can control the password length and select which types of characters (uppercase, lowercase, numbers, symbols) to include, giving them full control over their password's strength and complexity."
+            ProjectLink="https://globalbites.vercel.app/"
+            onShowPopup={handleShowPopup}
+            isHidden={isHidden}
+          />
           <ProjectCard
             ProjectImg={passgenImg}
             ProjectTitle="Random Password Generator"
