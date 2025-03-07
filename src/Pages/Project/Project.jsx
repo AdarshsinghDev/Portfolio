@@ -99,11 +99,11 @@ function Project() {
             ProjectDesc="GlobalBites is a full-stack recipe recommendation website that allows users to search for recipes based on available ingredients. The platform is powered by React.js (frontend) and Node.js with Express.js (backend). It integrates the Spoonacular API to fetch recipe data, prioritizing Indian cuisine before displaying other international dishes. The project also features Google Authentication, user-friendly filtering, and a secure, scalable backend deployed on Render.
 
 
----
+------------
 
 🔹 Technology Stack
 
-Frontend: React.js, Tailwind CSS, Vite
+Frontend: React.js,CSS,Scss,Vite
 
 Backend: Node.js, Express.js
 
