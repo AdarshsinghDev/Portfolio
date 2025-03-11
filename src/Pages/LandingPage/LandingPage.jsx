@@ -6,6 +6,7 @@ import leaf from "../../assets/leaf.svg";
 import cloud from "../../assets/cloud.png";
 import cloudL from "../../assets/cloud-l.png";
 import certificatePdf from "../../../public/Adarsh_Certificate.pdf";
+import resumePdf from "../../../public/Adarsh_Resume.pdf";
 function LandingPage() {
   const [text, setText] = useState("");
 
@@ -228,7 +229,11 @@ function LandingPage() {
         <div className="pine-contact">
           <div className="contact-outer">
             <div className="contact-link">
-              <a href="/" className="resume-btn">
+              <a 
+                href={resumePdf} 
+                className="resume-btn"
+                download="Adarsh_Resume.pdf"
+                >
                 Resume
               </a>
             </div>
