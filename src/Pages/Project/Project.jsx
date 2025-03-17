@@ -10,6 +10,7 @@ import quoteImg from "../../assets/quote.png";
 import weatherImg from "../../assets/weather.png";
 import passgenImg from "../../assets/passgen.png";
 import globalImg from "../../assets/globalbites.png";
+import diceImg from "../../assets/dicegame.png";
 
 import Slider from "react-slick";
 import clickSound from "../../assets/click.mp3";
@@ -99,7 +100,7 @@ function Project() {
             ProjectDesc="GlobalBites is a full-stack recipe recommendation website that allows users to search for recipes based on available ingredients. The platform is powered by React.js (frontend) and Node.js with Express.js (backend). It integrates the Spoonacular API to fetch recipe data, prioritizing Indian cuisine before displaying other international dishes. The project also features Google Authentication, user-friendly filtering, and a secure, scalable backend deployed on Render.
 
 
-------------
+----------
 
 🔹 Technology Stack
 
@@ -116,6 +117,16 @@ Hosting: Vercel (Frontend) & Render (Backend)"
             onShowPopup={handleShowPopup}
             isHidden={isHidden}
           />
+
+           <ProjectCard
+            ProjectImg={diceImg}
+            ProjectTitle="Dice Game"
+            ProjectDesc="I built an interactive Dice Rolling Game using React.js, where players can test their luck and timing skills. The game starts by allowing the user to select a dice number from 1 to 6. Upon clicking the Start button, the dice begins rolling, and when the Stop button is pressed, the dice stops on a random number. If the stopped number matches the user's selected number, they earn 1 point; otherwise, no points are awarded. Additionally, a Reset button lets the user reset the score to 0 at any time. This project showcases my expertise in React state management, event handling, and UI interactivity."
+            ProjectLink="https://dicegame-adarsh.vercel.app/"
+            onShowPopup={handleShowPopup}
+            isHidden={isHidden}
+          />
+          
           <ProjectCard
             ProjectImg={passgenImg}
             ProjectTitle="Random Password Generator"
