@@ -129,13 +129,13 @@ Hosting: Vercel (Frontend) & Render (Backend)"
           />
 
          <ProjectCard
-  ProjectImg={todoImg}
-  ProjectTitle="ToDo App"
-  ProjectDesc={`React.js To-Do List App allows users to add, edit, and delete tasks while storing them in localStorage to persist data after a refresh. Tasks display timestamps, and edited tasks are marked as "Edited." The app features light/dark mode toggle and dynamic messages based on task status, such as "No tasks yet! Add something to do" when empty and "Great job🔥 All tasks are done" when completed. For full responsiveness, ensure the use of flexbox, grid, media queries, and relative units in CSS.`}
-  ProjectLink="https://todo-adarsh.vercel.app/"
-  onShowPopup={handleShowPopup}
-  isHidden={isHidden}
-/>
+          ProjectImg={todoImg}
+          ProjectTitle="ToDo App"
+          ProjectDesc="A React.js To-Do List App where users can add, edit, and delete tasks. Tasks are stored in localStorage for persistence, and edited tasks are marked accordingly. The app includes a light/dark mode toggle and dynamic messages based on task status. Fully responsive with Flexbox, Grid, and media queries for smooth usability across all devices."
+          ProjectLink="https://todo-adarsh.vercel.app/"
+          onShowPopup={handleShowPopup}
+          isHidden={isHidden}
+        />
 
           
           <ProjectCard
