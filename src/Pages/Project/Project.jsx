@@ -11,6 +11,7 @@ import weatherImg from "../../assets/weather.png";
 import passgenImg from "../../assets/passgen.png";
 import globalImg from "../../assets/globalbites.png";
 import diceImg from "../../assets/dicegame.png";
+import todoImg from "../../assets/todo.png";
 
 import Slider from "react-slick";
 import clickSound from "../../assets/click.mp3";
@@ -126,6 +127,16 @@ Hosting: Vercel (Frontend) & Render (Backend)"
             onShowPopup={handleShowPopup}
             isHidden={isHidden}
           />
+
+         <ProjectCard
+            ProjectImg={todoImg}
+            ProjectTitle="ToDo App"
+            ProjectDesc=" React.js To-Do List App allows users to add, edit, and delete tasks while storing them in localStorage to persist data after a refresh. Tasks display timestamps, and edited tasks are marked as "Edited." The app features light/dark mode toggle and dynamic messages based on task status, such as "No tasks yet! Add something to do" when empty and "Great job🔥 All tasks are done" when completed. For full responsiveness, ensure the use of flexbox/grid, media queries, and relative units in CSS "
+            ProjectLink="https://todo-adarsh.vercel.app/"
+            onShowPopup={handleShowPopup}
+            isHidden={isHidden}
+          />
+
           
           <ProjectCard
             ProjectImg={passgenImg}
