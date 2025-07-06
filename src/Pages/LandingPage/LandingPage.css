@@ -132,9 +132,9 @@
 
 .cloud9 {
   width: 190px;
-  top: 120px;
+  top: 100px;
   left: 0;
-  animation: cloudmove9 180s linear infinite;
+  animation: cloudmove9 100s linear infinite;
   z-index: 1  ;
 }
 
