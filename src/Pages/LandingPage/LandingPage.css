@@ -246,7 +246,7 @@
 
 @keyframes cloudmove9 {
   0% {
-    transform: translateX(-30vw); /* Start slightly inside */
+    transform: translateX(-0vw); /* Start slightly inside */
     filter: drop-shadow(-4px 3px 2px  var(--shadow-gray));
   }
   50% {
