@@ -210,6 +210,10 @@ function LandingPage() {
           <img src={cloud} alt="cloud's image" />
           <p>Tailwind</p>
         </div>
+        <div className="cloud cloud9">
+          <img src={cloud} alt="cloud's image" />
+          <p>Express.js</p>
+        </div>
         &nbsp;
       </div>
       &nbsp;
