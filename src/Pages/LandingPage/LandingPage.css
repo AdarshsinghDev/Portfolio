@@ -130,6 +130,14 @@
   z-index: 1;
 }
 
+.cloud9 {
+  width: 190px;
+  top: 120px;
+  left: 0;
+  animation: cloudmove9 180s linear infinite;
+  z-index: 1  ;
+}
+
 /* -----Cloud---animation-------- */
 @keyframes cloudmove1 {
   0% {
@@ -233,6 +241,21 @@
   100% { 
     transform: translateX(0vw); 
     filter: drop-shadow(6px 3px 3px  var(--shadow-gray));
+  }
+}
+
+@keyframes cloudmove9 {
+  0% {
+    transform: translateX(-30vw); /* Start slightly inside */
+    filter: drop-shadow(-4px 3px 2px  var(--shadow-gray));
+  }
+  50% {
+    transform: translateX(20vw); /* Move further right */
+    filter: drop-shadow(6px 4px 3px  var(--shadow-gray));
+  }
+  100% {
+    transform: translateX(-30vw); /* Return to the start */
+    filter: drop-shadow(-4px 3px 2px  var(--shadow-gray));
   }
 }
 /* -------greet--piine--- */
