@@ -12,6 +12,7 @@ import passgenImg from "../../assets/passgen.png";
 import globalImg from "../../assets/globalbites.png";
 import diceImg from "../../assets/dicegame.png";
 import todoImg from "../../assets/todo.png";
+import TaskBoard from "../../assets/TaskBoard.png";
 
 import Slider from "react-slick";
 import clickSound from "../../assets/click.mp3";
@@ -128,6 +129,15 @@ Hosting: Vercel (Frontend) & Render (Backend)"
             isHidden={isHidden}
           />
 
+           <ProjectCard
+          ProjectImg={TaskBoard}
+          ProjectTitle="TaskBoard App"
+          ProjectDesc="Collaborative Task Board is a full-stack task management web application built using the MERN Stack (MongoDB, Express.js, React.js, Node.js). It allows users to create, update, delete, and mark tasks as completed in a visually clean and responsive interface. Designed with a modern UI using Tailwind CSS, this app also integrates Toast notifications, real-time updates, and responsive design for all screen sizes."
+          ProjectLink="https://adarsh-taskmanager.vercel.app/"
+          onShowPopup={handleShowPopup}
+          isHidden={isHidden}
+        />
+          
          <ProjectCard
           ProjectImg={todoImg}
           ProjectTitle="ToDo App"
