@@ -214,7 +214,7 @@ function LandingPage() {
           <img src={cloud} alt="cloud's image" />
           <p>Express.js</p>
         </div>
-        <div className="cloud cloud5">
+        <div className="cloud cloud5 cloud10">
           <img src={cloud} alt="cloud's image" />
           <p>MongoDB</p>
         </div>
