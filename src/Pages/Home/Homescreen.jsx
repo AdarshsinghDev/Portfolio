@@ -178,7 +178,7 @@ function Homescreen({ toggleTheme }) {
           transition={{ duration: 0.6 }}
           className="mywork"
         >
-          A Web Developer
+          Full Stack Developer
         </motion.h2>
       </div>
       <div className="home-img">
