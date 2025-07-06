@@ -138,6 +138,13 @@
   z-index: 1  ;
 }
 
+.cloud10 {
+  width: 120px;
+  top: 40px;
+  right: 0;
+  z-index: 1;
+}
+
 /* -----Cloud---animation-------- */
 @keyframes cloudmove1 {
   0% {
