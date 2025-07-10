@@ -135,7 +135,8 @@
   top: 100px;
   left: 0;
   animation: cloudmove9 100s linear infinite;
-  z-index: 1  ;
+  z-index: 1 ;
+  opacity: 0.4;
 }
 
 .cloud10 {
