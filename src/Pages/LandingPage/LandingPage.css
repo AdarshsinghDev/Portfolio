@@ -93,7 +93,7 @@
 }
 .cloud4 {
   top: -50px;
-  width: 250px;
+  width: 140px;
   right: 40%;
   animation-name: cloudmove4;
   animation: cloudmove4 230s linear infinite;
@@ -108,7 +108,7 @@
 
 .cloud6 {
   top: 10px;
-  width: 250px;
+  width: 150px;
   right: 10%;
   animation: cloudmove6 200s linear infinite;
 }
@@ -131,7 +131,7 @@
 }
 
 .cloud9 {
-  width: 190px;
+  width: 90px;
   top: 100px;
   left: 0;
   animation: cloudmove9 100s linear infinite;
