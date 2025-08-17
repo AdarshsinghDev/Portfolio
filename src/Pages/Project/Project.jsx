@@ -13,6 +13,7 @@ import globalImg from "../../assets/globalbites.png";
 import diceImg from "../../assets/dicegame.png";
 import todoImg from "../../assets/todo.png";
 import TaskBoard from "../../assets/TaskBoard.png";
+import Product from "../../assets/fullstack-product-mangement.png"; 
 
 import Slider from "react-slick";
 import clickSound from "../../assets/click.mp3";
@@ -120,6 +121,15 @@ Hosting: Vercel (Frontend) & Render (Backend)"
             isHidden={isHidden}
           />
 
+          <ProjectCard
+  ProjectImg={Product}
+  ProjectTitle="Product Management App"
+  ProjectDesc="Product Management App is a full-stack MERN project deployed with frontend on Vercel and backend on Render. The app supports full CRUD operations (Create, Read, Update, Delete) for product tasks. To ensure smooth communication, CORS is configured to allow only requests from the deployed frontend domain. Built with Tailwind CSS, it features a responsive UI, toast notifications, and a clean workflow for managing tasks efficiently."
+  ProjectLink="https://fullstack-product-mangement.vercel.app/" 
+  onShowPopup={handleShowPopup}
+  isHidden={isHidden}
+/>
+
            <ProjectCard
             ProjectImg={diceImg}
             ProjectTitle="Dice Game"
@@ -129,6 +139,9 @@ Hosting: Vercel (Frontend) & Render (Backend)"
             isHidden={isHidden}
           />
 
+       
+
+          
            <ProjectCard
           ProjectImg={TaskBoard}
           ProjectTitle="TaskBoard App"
