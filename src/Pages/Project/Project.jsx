@@ -14,6 +14,7 @@ import diceImg from "../../assets/dicegame.png";
 import todoImg from "../../assets/todo.png";
 import TaskBoard from "../../assets/TaskBoard.png";
 import Product from "../../assets/fullstack-product-mangement.png"; 
+import ProductTranparency from "../../assets/product-transparency.png";  
 
 import Slider from "react-slick";
 import clickSound from "../../assets/click.mp3";
@@ -126,6 +127,57 @@ Hosting: Vercel (Frontend) & Render (Backend)"
   ProjectTitle="Product Management App"
   ProjectDesc="Product Management App is a full-stack MERN project deployed with frontend on Vercel and backend on Render. The app supports full CRUD operations (Create, Read, Update, Delete) for product tasks. To ensure smooth communication, CORS is configured to allow only requests from the deployed frontend domain. Built with Tailwind CSS, it features a responsive UI, toast notifications, and a clean workflow for managing tasks efficiently."
   ProjectLink="https://fullstack-product-mangement.vercel.app/" 
+  onShowPopup={handleShowPopup}
+  isHidden={isHidden}
+/>
+
+          <ProjectCard
+  ProjectImg={ProductTranparency}
+  ProjectTitle="Product Transparency App"
+  ProjectDesc="An AI-powered product management system that allows users to add products, answer review questions, and generate automated PDF reports. Designed with simplicity, transparency, and scalability in mind.
+
+🚀 Setup Instructions
+
+Clone the repository git clone https://github.com/AdarshsinghDev/Product-transparency cd product-review-app
+
+Install dependencies npm install
+
+Start backend server cd backend npm start
+
+Start frontend server cd frontend npm run dev
+
+Access the app
+
+Open https://product-transparency-sable.vercel.app/ in your browser.
+
+✨ Features
+
+➕ Add Products with category, questions, and answers
+
+📝 Product Review Forms with AI-suggested answers
+
+📊 Dashboard displaying stored products and reviews
+
+🤖 AI Integration for smart Question about Added Product
+
+📄 Generate PDF Reports with product details + answers
+
+🔐 Authentication & Data Storage with MongoDB
+
+⚡ Fast & Minimal UI built with React + Tailwind
+
+🧠 AI Service Documentation
+
+The system integrates with an AI service to enhance product review:
+
+Input: Product details + list of questions
+
+Processing: AI generates dynamic question
+
+Output: Auto-filled form answers & structured product review
+
+Export: Users can export a PDF report containing product info and AI-enhanced reviews"
+  ProjectLink="https://product-transparency-sable.vercel.app/" 
   onShowPopup={handleShowPopup}
   isHidden={isHidden}
 />
